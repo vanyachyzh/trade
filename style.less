@@ -1,4 +1,4 @@
-// 
+// out: ./style.css
 @font-face {
     font-family: 'Mazzard';
     src: local('Mazzard H Regular'), local('Mazzard-H-Regular'),
@@ -7,6 +7,7 @@
         url('./fonts/MazzardH-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: block;
 }
 
 body {
@@ -161,6 +162,10 @@ body {
             color: #FFFFFF;
         }
 
+        .menu{
+            display: none;
+        }
+
         .navigation {
 
             ul {
@@ -199,6 +204,10 @@ body {
             font-size: 20px;
             line-height: 24px;
             color: #000000;
+
+            &:hover{
+                box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.9);
+            }
 
             .icon {
                 width: 13.66px;
@@ -518,25 +527,20 @@ body {
             font-size: 80px;
             line-height: 90px;
             text-shadow: 0px 5.14068px 5.14068px rgba(0, 0, 0, 0.25);
+
+            span{
+                font-weight: 600;
+                font-size: 80px;
+                line-height: 90px;
+                background: linear-gradient(89.95deg, #487FFF -1.65%, #73B5FF 51.06%, #CB76FF 99.96%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                text-shadow: 0px 5.14068px 5.14068px rgba(0, 0, 0, 0.25);
+            }
         }
 
-        .title3 {
-            margin: 0;
-            position: absolute;
-            width: 547.48px;
-            height: 89.96px;
-            left: 133px;
-            top: 256.22px;
-            font-weight: 600;
-            font-size: 80px;
-            line-height: 90px;
-            background: linear-gradient(89.95deg, #487FFF -1.65%, #73B5FF 51.06%, #CB76FF 99.96%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-            text-shadow: 0px 5.14068px 5.14068px rgba(0, 0, 0, 0.25);
-        }
 
         .description {
             position: absolute;
@@ -566,6 +570,10 @@ body {
             font-size: 18px;
             line-height: 21px;
 
+            &:hover{
+                box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.9);
+            }
+
             .budge {
                 width: 34px;
                 height: 34px;
@@ -574,8 +582,8 @@ body {
             .arrow {
                 position: absolute;
                 height: 11px;
-                top: 27px;
-                left: 25px;
+                top: 28px;
+                left: 20.5px;
             }
         }
 
@@ -692,15 +700,24 @@ body {
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 21px;
+
+                &:hover{
+                    box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.9);
+                }
             }
         }
     }
 
+
+    .border{
+        border: 1px solid white;
+    }
     .section3 {
         position: absolute;
         width: 1535.39px;
         top: 1810px;
         left: 0;
+
 
         .element {
             width: 162.25px;
@@ -971,6 +988,9 @@ body {
             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.35);
             border-radius: 46px;
             border: 2px solid rgba(159, 159, 159, 0.2);
+            &:hover{
+                box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+            }
         }
 
         .card1 {

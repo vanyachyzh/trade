@@ -4,13 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobileStyle.css">
+
   <title>Document</title>
 </head>
 
 <body>
+
+  
+
+
   <div class="container">
-    <!-- background part -->
+    
     <div class="shadow1"></div>
     <div class="shadow2"></div>
     <div class="shadow3"></div>
@@ -24,9 +31,10 @@
     <img class="ball1" src="./img/ball.svg" alt="">
     <img class="ball2" src="./img/ball.svg" alt="">
 
-    <header class="header">
+    <header class="header" data-aos="fade-in"  data-aos-duration="4000">
 
       <div class="logo">C</div>
+      <div class="menu"></div>
 
       <nav class="navigation">
 
@@ -38,11 +46,13 @@
         </ul>
       </nav>
 
-      <button class="career-button">Career<svg class="icon"><use xlink:href="#shape"></use></svg></button>
+      <button class="career-button">Career
+        <svg class="icon"><use xlink:href="#shape"></use></svg>
+      </button>
 
     </header>
 
-    <section class="section1">
+    <section class="section1" data-aos="fade-in"  data-aos-duration="4000">
 
       <img class="background" src="./img/Vector.svg" alt="">
 
@@ -77,8 +87,8 @@
       <img src="./img/Group 131.svg" alt="" class="line4 line">
 
       <h1 class="title1">crypto trading</h1>
-      <h1 class="title2">Engineers Meet</h1>
-      <h1 class="title3">Traders __</h1>
+      <h1 class="title2">Engineers Meet <span>Traders __</span></h1>
+      <!-- <h1 class="title3">Traders __</h1> -->
       <h1 class="description">Advanced crypto algorithmic trading and efficient cross-chain execution, at scale.</h1>
 
       <button class="button-learn">
@@ -91,7 +101,7 @@
       <svg class="mouse2"><use xlink:href="#mouse2"></use></svg>
     </section>
 
-    <section class="section2">
+    <section class="section2" data-aos="fade-in"  data-aos-duration="4000">
       <h3 class="about">about us</h3>
       <h1 class="global-technologies">Global technologies</h1>  
       <img src="./img/section2/Group 124.svg" alt="" class="graph">
@@ -107,7 +117,7 @@
       
     </section>
     
-    <section class="section3">
+    <section class="section3"  data-aos="fade-in"  data-aos-duration="4000">
       <div class="block1">
         <div class="element1 element">Artificial Intelligence</div>
         <div class="element2 element">Storage Networks</div>
@@ -141,7 +151,7 @@
       </div>
     </section>
 
-    <section class="section4">
+    <section class="section4" data-aos="fade-in"  data-aos-duration="4000">
       <div class="card1 card">
         <div class="light1"></div>
         <div class="light2"></div>
@@ -252,6 +262,10 @@
       </defs>
     </symbol>
   </svg>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+  
 
 </body>
 
